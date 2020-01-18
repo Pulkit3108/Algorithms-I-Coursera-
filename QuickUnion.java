@@ -18,7 +18,7 @@ public class QuickUnion
     }
     public void Union(int a,int b){
         int x=root(a);
-        A[x]=root(A[b]);
+        A[x]=root(b);
     }
     
 	public static void main(String[] args) {

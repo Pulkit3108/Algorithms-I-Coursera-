@@ -12,6 +12,7 @@ public class Weighted_QuickUnion
     }
     public int root(int a){
         while(A[a]!=a){
+	    A[a]=A[A[a]];	
             a=A[a];
         }
         return(a);

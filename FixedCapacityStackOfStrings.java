@@ -12,7 +12,9 @@ public class FixedCapacityStackOfStrings
         s[N++]=item;
     }
     public String pop(){
-        return(s[--N]);
+	String item = s[--N];
+	s[N] = null;    
+        return(item);
     }
 
 	public static void main(String[] args) {

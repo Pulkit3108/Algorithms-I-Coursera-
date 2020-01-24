@@ -21,8 +21,8 @@ public class Stack<Item>
     }
 	public static void main(String[] args) {
 		Stack q = new Stack();
-		q.enqueue("hello");
-		q.enqueue(5);
-		System.out.println(q.dequeue());
+		q.push("hello");
+		q.push(5);
+		System.out.println(q.pop());
 	}
 }
